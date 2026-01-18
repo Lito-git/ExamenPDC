@@ -46,6 +46,17 @@ npm install
    - Crear un proyecto en [Firebase Console](https://console.firebase.google.com/).
    - Habilitar Firestore y Authentication (Email/Password).
    - Copiar la configuración al archivo `src/firebase.js`.
+   - Crear un archivo .env.local en la raíz del proyecto con tus credenciales de Firebase y usar las variables configuradas en `src/firebase.js`.
+   - Ejemplo de configuracion de archivo .env.local (este archivo no se incluye en la subida al repositorio):
+   
+```bash
+   VITE_APP_FIREBASE_API_KEY=tu_api_key_aqui
+   VITE_APP_FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
+   VITE_APP_FIREBASE_PROJECT_ID=tu_proyecto_id
+   VITE_APP_FIREBASE_STORAGE_BUCKET=tu_bucket.firebasestorage.app
+   VITE_APP_FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
+   VITE_APP_FIREBASE_APP_ID=tu_app_id
+```
 
 4. **Ejecutar la aplicación en modo desarrollo:**
 ```bash
@@ -68,6 +79,7 @@ tienda-react/
 │   └── App.jsx              # Componente principal con rutas y estado de usuario
 │
 ├── public/                  # Archivos estáticos
+├── .env.local
 ├── package.json
 └── README.md
 ```

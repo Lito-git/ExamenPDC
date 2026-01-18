@@ -72,7 +72,7 @@ tienda-react/
 │   └── App.jsx              # Componente principal con rutas y estado de usuario
 │
 ├── public/                  # Archivos estáticos
-├── .env.local  
+├── .env.local               # Variables de entorno
 ├── package.json
 └── README.md
 ```

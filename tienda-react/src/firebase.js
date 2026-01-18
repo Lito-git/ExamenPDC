@@ -5,17 +5,17 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyBhFhEA_H3XZxaIpBftZP92zq8ZyoXprbU",
+    apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
 
-    authDomain: "tienda-react-2b2a8.firebaseapp.com",
+    authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
 
-    projectId: "tienda-react-2b2a8",
+    projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
 
-    storageBucket: "tienda-react-2b2a8.firebasestorage.app",
+    storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
 
-    messagingSenderId: "434665056450",
+    messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
 
-    appId: "1:434665056450:web:9de9e601f73525e436f35b"
+    appId: import.meta.env.VITE_APP_FIREBASE_APP_ID
 
 };
 
